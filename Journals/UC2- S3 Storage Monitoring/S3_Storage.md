@@ -2,7 +2,7 @@
 
 # Data Engineering – AWS S3 cost monitoring – Storage Lens
 
-** Problem Statement : ** How to monitor S3 bucket storage utilization.
+**Problem Statement :  How to monitor S3 bucket storage utilization.
 
 Amazon S3 is an object storage service and one of the most popular services in AWS which offers of industry-leading scalability, data availability, security, and performance. Organizations can store and retrieve any amount of data from anywhere.
 If an organization is using aws for their cloud service, AWS S3 is one of prefer storage solution. Some of the use cases of S3 are:
@@ -56,7 +56,7 @@ By default, AWS created a lens for you ( which cover all regions), if you want t
 <img width="482" alt="image" src="https://user-images.githubusercontent.com/24868114/224404550-7518a4da-41f8-4ff7-b14c-328a6e0966f7.png">
 
 
-** Quick Tips: ** 
+**Quick Tips: 
 1.	Once you understood the usages, you can see which critical data is require for your use case and access pattern. If there are buckets and folders access pattern is unknown, better to use S3 intelligent tiering for cost saving.
 2.	Many organizations and enable bucket versioning so that they can avoid the accidental deletion of the object, however ONLY critical data objects (which is difficult to recreate, scripts folder) versioning make sense. But use cases like Data lake when you are getting source data and processed the data and move to archive, you really DO NOT need versioning to the staging bucket.
 3.	For files which needs to be stored for long term, better to define a life cycle management to Glacier storage, this can be set it up using Life cycle management policy. 
